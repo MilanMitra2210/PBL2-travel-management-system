@@ -13,10 +13,11 @@ public class Loading extends JFrame implements Runnable{
 	
 	JProgressBar p;
 	Thread t;
+	String username;
 	
-	Loading(String user){
+	Loading(String username){
 		
-		String username = user;
+		this.username = username;
 		t = new Thread(this);
 		
 		setBounds(450 ,250 , 650, 400);
@@ -64,7 +65,7 @@ public class Loading extends JFrame implements Runnable{
 				}else {
 					i = 101;
 					dispose();
-					new Dashboard().setVisible(true);;
+					new Dashboard(username).setVisible(true);;
 				}
 				Thread.sleep(50);
 			}

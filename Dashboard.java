@@ -17,8 +17,12 @@ import javax.swing.JPanel;
 public class Dashboard extends JFrame implements ActionListener {
 	
 	JButton b1 , b2 ,b3 , b4 , b5 , b6 ,b7 ,b8 ,b9 ,b10 ,b11 ,b12 ,b13, b14 ,b15;
+	String username;
 
-	Dashboard(){
+	Dashboard(String username){
+		
+		this.username = username;
+		
 		setExtendedState(JFrame.MAXIMIZED_BOTH);
 		setLayout(null);
 		
@@ -56,6 +60,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		b1.setForeground(Color.WHITE);
 		b1.setMargin(new Insets(0, 0, 0, 55));
 		b1.setBounds(0, 0, 300, 40);
+		b1.addActionListener(this);
 		p2.add(b1);
 		
 		b2 = new JButton("Update Personal Details");
@@ -194,7 +199,7 @@ public class Dashboard extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 	
 		if(e.getSource() == b1) {
-			
+			new AddCustomer(username).setVisible(true);
 		}else if(e.getSource() == b13) {
 			try {
 				Runtime.getRuntime().exec("calc.exe");
@@ -211,6 +216,6 @@ public class Dashboard extends JFrame implements ActionListener {
 	}
 	
 	public static void main(String[] args) {
-		new Dashboard().setVisible(true);
+		new Dashboard("").setVisible(true);
 	}
 }
