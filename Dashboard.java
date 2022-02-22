@@ -69,6 +69,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		b2.setForeground(Color.WHITE);
 		b2.setMargin(new Insets(0, 0, 0, 30));
 		b2.setBounds(0, 40, 300, 40);
+		b2.addActionListener(this);
 		p2.add(b2);
 		
 		b3 = new JButton("Veiw Details");
@@ -193,6 +194,8 @@ public class Dashboard extends JFrame implements ActionListener {
 		
 		l1.add(l4);
 		
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
 	@Override
@@ -200,6 +203,8 @@ public class Dashboard extends JFrame implements ActionListener {
 	
 		if(e.getSource() == b1) {
 			new AddCustomer(username).setVisible(true);
+		}else if(e.getSource() == b2) {
+			new UpdateCustomer(username).setVisible(true);
 		}else if(e.getSource() == b13) {
 			try {
 				Runtime.getRuntime().exec("calc.exe");

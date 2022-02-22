@@ -48,6 +48,8 @@ public class Loading extends JFrame implements Runnable{
 		add(l3);
 		
 		t.start();
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
 	public static void main(String[] args) {

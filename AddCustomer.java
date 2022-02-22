@@ -33,13 +33,13 @@ public class AddCustomer extends JFrame implements ActionListener {
 		
 		this.username = username;
 		
-		setBounds(300 , 150 , 850 , 550);
+		setBounds(400 , 150 , 850 , 550);
 		getContentPane().setBackground(Color.WHITE);
 		setLayout(null);
 		
-		JLabel l0 = new JLabel("ADD DETAILS");
-		l0.setBounds(320 , 10 , 300 , 25);
-		l0.setFont(new Font("Tahoma", Font.BOLD,25));
+		JLabel l0 = new JLabel("ADD CUSTOMER DETAILS");
+		l0.setBounds(70 , 10 , 300 , 18);
+		l0.setFont(new Font("Tahoma", Font.BOLD,18));
 		l0.setForeground(Color.RED);
 		add(l0);
 		
@@ -212,10 +212,13 @@ public class AddCustomer extends JFrame implements ActionListener {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
 	public static void main(String[] args) {
-		new AddCustomer("").setVisible(true);
+		new AddCustomer("Milan2210").setVisible(true);
 	}
 
 	@Override
@@ -247,7 +250,7 @@ public class AddCustomer extends JFrame implements ActionListener {
 				
 				JOptionPane.showMessageDialog(null, "Customer Details Added Successfully");
 				dispose();
-				new Dashboard(username).setVisible(true);
+//				new Dashboard(username).setVisible(true);
 			} catch (Exception ae) {
 				ae.printStackTrace();
 			}

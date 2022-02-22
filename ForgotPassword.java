@@ -116,6 +116,9 @@ public class ForgotPassword extends JFrame implements ActionListener {
 		b3.setBounds(200, 230, 100, 25);
 		b3.addActionListener(this);
 		p1.add(b3);
+		
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
 	public static void main(String[] args) {
