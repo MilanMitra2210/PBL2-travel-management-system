@@ -77,6 +77,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		b3.setFont(new Font("Tahoma",Font.PLAIN,20));
 		b3.setForeground(Color.WHITE);
 		b3.setMargin(new Insets(0, 0, 0, 130));
+		b3.addActionListener(this);
 		b3.setBounds(0, 80, 300, 40);
 		p2.add(b3);
 		
@@ -205,6 +206,8 @@ public class Dashboard extends JFrame implements ActionListener {
 			new AddCustomer(username).setVisible(true);
 		}else if(e.getSource() == b2) {
 			new UpdateCustomer(username).setVisible(true);
+		}else if(e.getSource() == b3) {
+			new ViewCustomer(username).setVisible(true);
 		}else if(e.getSource() == b13) {
 			try {
 				Runtime.getRuntime().exec("calc.exe");
@@ -221,6 +224,6 @@ public class Dashboard extends JFrame implements ActionListener {
 	}
 	
 	public static void main(String[] args) {
-		new Dashboard("").setVisible(true);
+		new Dashboard("Milan2210").setVisible(true);
 	}
 }

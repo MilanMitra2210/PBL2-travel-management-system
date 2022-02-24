@@ -11,11 +11,9 @@ import java.sql.ResultSet;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
@@ -23,9 +21,7 @@ public class UpdateCustomer extends JFrame implements ActionListener {
 	
 	String username;
 	JTextField t1, t2 ,t3 ,t4 , t5 ,t6, t7 , t8 ,t9;
-	JComboBox<String> c1;
 	JLabel label , label2;
-	JRadioButton r1 , r2;
 	JButton b1 , b2;
 	
 	public UpdateCustomer(String username) {
