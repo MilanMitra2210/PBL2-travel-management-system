@@ -203,17 +203,25 @@ public class Dashboard extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 	
 		if(e.getSource() == b1) {
+			
 			new AddCustomer(username).setVisible(true);
+			
 		}else if(e.getSource() == b2) {
+			
 			new UpdateCustomer(username).setVisible(true);
+			
 		}else if(e.getSource() == b3) {
+			
 			new ViewCustomer(username).setVisible(true);
+			
 		}else if(e.getSource() == b13) {
+			
 			try {
 				Runtime.getRuntime().exec("calc.exe");
 			}catch(Exception ae) {			}
 			
 		}else if(e.getSource() == b14) {
+			
 			try {
 				Runtime.getRuntime().exec("notepad.exe");
 			}catch (Exception ae) {			}

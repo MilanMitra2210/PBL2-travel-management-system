@@ -25,7 +25,7 @@ public class ViewCustomer extends JFrame implements ActionListener {
 		
 		this.username = username;
 		
-		setBounds(300 , 50 , 900, 625);
+		setBounds(300 , 50 , 950, 625);
 		getContentPane().setBackground(Color.WHITE);
 		setLayout(null);
 		
