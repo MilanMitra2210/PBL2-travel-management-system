@@ -206,7 +206,6 @@ public class UpdateCustomer extends JFrame implements ActionListener {
 		}
 		
 		
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
 	public static void main(String[] args) {

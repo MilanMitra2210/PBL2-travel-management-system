@@ -95,6 +95,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		b5.setForeground(Color.WHITE);
 		b5.setMargin(new Insets(0, 0, 0, 100));
 		b5.setBounds(0, 160, 300, 40);
+		b5.addActionListener(this);
 		p2.add(b5);
 		
 		b6 = new JButton("Book Package");
@@ -226,8 +227,8 @@ public class Dashboard extends JFrame implements ActionListener {
 				Runtime.getRuntime().exec("notepad.exe");
 			}catch (Exception ae) {			}
 			
-		}else if(e.getSource() == b15) {
-			
+		}else if(e.getSource() == b5) {
+			new CheckPackage().setVisible(true);
 		}
 	}
 	
