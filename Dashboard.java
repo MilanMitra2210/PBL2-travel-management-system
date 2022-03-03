@@ -104,6 +104,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		b6.setForeground(Color.WHITE);
 		b6.setMargin(new Insets(0, 0, 0, 110));
 		b6.setBounds(0, 200, 300, 40);
+		b6.addActionListener(this);
 		p2.add(b6);
 		
 		b7 = new JButton("View Pacakage");
@@ -229,6 +230,8 @@ public class Dashboard extends JFrame implements ActionListener {
 			
 		}else if(e.getSource() == b5) {
 			new CheckPackage().setVisible(true);
+		}else if(e.getSource() == b6) {
+			new BookPackage(username).setVisible(true);
 		}
 	}
 	
