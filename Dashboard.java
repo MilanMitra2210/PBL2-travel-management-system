@@ -113,6 +113,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		b7.setForeground(Color.WHITE);
 		b7.setMargin(new Insets(0, 0, 0, 100));
 		b7.setBounds(0, 240, 300, 40);
+		b7.addActionListener(this);
 		p2.add(b7);
 		
 		b8 = new JButton("View Hotels");
@@ -232,6 +233,8 @@ public class Dashboard extends JFrame implements ActionListener {
 			new CheckPackage().setVisible(true);
 		}else if(e.getSource() == b6) {
 			new BookPackage(username).setVisible(true);
+		}else if(e.getSource() == b7) {
+			new ViewPackage(username).setVisible(true);
 		}
 	}
 	
