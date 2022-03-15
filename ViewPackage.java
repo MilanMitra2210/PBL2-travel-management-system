@@ -116,7 +116,7 @@ public class ViewPackage extends JFrame implements ActionListener {
 		b1 = new JButton("Back");
 		b1.setBackground(Color.BLACK);
 		b1.setForeground(Color.WHITE);
-		b1.setBounds(150, 340, 150, 25);
+		b1.setBounds(100, 340, 100, 25);
 		b1.addActionListener(this);
 		add(b1);
 	}

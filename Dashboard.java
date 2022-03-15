@@ -122,6 +122,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		b8.setForeground(Color.WHITE);
 		b8.setMargin(new Insets(0, 0, 0, 130));
 		b8.setBounds(0, 280, 300, 40);
+		b8.addActionListener(this);
 		p2.add(b8);
 		
 		b9 = new JButton("Book Hotel");
@@ -130,6 +131,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		b9.setForeground(Color.WHITE);
 		b9.setMargin(new Insets(0, 0, 0, 135));
 		b9.setBounds(0, 320, 300, 40);
+		b9.addActionListener(this);
 		p2.add(b9);
 		
 		b10 = new JButton("View Booked Hotel");
@@ -146,6 +148,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		b11.setForeground(Color.WHITE);
 		b11.setMargin(new Insets(0, 0, 0, 125));
 		b11.setBounds(0, 400, 300, 40);
+		b11.addActionListener(this);
 		p2.add(b11);
 		
 		b12 = new JButton("Payment");
@@ -235,6 +238,10 @@ public class Dashboard extends JFrame implements ActionListener {
 			new BookPackage(username).setVisible(true);
 		}else if(e.getSource() == b7) {
 			new ViewPackage(username).setVisible(true);
+		}else if(e.getSource() == b11) {
+			new Destination().setVisible(true);
+		}else if(e.getSource() == b8) {
+			new CheckHotels().setVisible(true);
 		}
 	}
 	
