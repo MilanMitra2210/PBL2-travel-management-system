@@ -242,6 +242,8 @@ public class Dashboard extends JFrame implements ActionListener {
 			new Destination().setVisible(true);
 		}else if(e.getSource() == b8) {
 			new CheckHotels().setVisible(true);
+		}else if(e.getSource() == b9) {
+			new BookHotel(username).setVisible(true);
 		}
 	}
 	
