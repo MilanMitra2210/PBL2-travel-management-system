@@ -21,7 +21,7 @@ public class CheckPackage extends JFrame {
 		String[] package1 = new String[] 
 				{"BRONZE PACKAGE","4 Days and 5 Nights", "Airport Assistance" ,
 				"Half Day City Tour" , "Daily Buffet" , "Welcome Drinks on Arrival" ,
-				"Full Day 3 Island Cruise" , "English Spraking Guide" , "BOOK NOW" ,
+				"Full Day 3 Island Cruise" , "English & Hindi Speaking Guide" , "BOOK NOW" ,
 				"SUMMER SPECIAL", "Rs 12000/- only", "package1.jpg"};
 		
 		String[] package2 = new String[] 
